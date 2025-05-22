@@ -127,3 +127,19 @@ color: var(--color-neutral-30);
     padding: 1.5rem;
     font-weight: 100;
 }
+
+/*Responsividade*/
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem 2 rem;
+    }
+}
+/*Responsividade*/
