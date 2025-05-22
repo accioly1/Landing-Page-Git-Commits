@@ -25,3 +25,16 @@ $('#mobile_btn').find('i').toggleClass('fa-x')
         document.getElementById("radio"+count).checked = true;
     }    
     /*Código para rolagem das imagens no Carrossel*/ 
+
+
+     /*Código para abertura das respostas (dúvidas frequentes)*/
+    document.addEventListener("DOMContentLoaded", function () {
+        const faqs = document.querySelectorAll(".faq");
+    
+        faqs.forEach((faq) => {
+            faq.addEventListener("click", () => {
+                faq.classList.toggle("active");
+            });
+        });
+    });
+    /*Código para abertura das respostas (dúvidas frequentes)*/
