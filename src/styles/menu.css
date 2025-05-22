@@ -66,3 +66,18 @@
     align-items: center;
     gap: 20px;
 }
+
+/*Responsividade*/
+@media screen and (max-width: 1170px) {
+    #produtos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #produtos {
+        grid-template-columns: 1fr; 
+    }
+}
+/*Responsividade*/
