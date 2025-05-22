@@ -109,3 +109,32 @@
 #radio3:checked ~ .navigation-auto .auto-btn3{
     background-color: #FF4000;
 }
+
+/*Responsividade*/
+@media screen and (max-width: 767px) {
+    .manual-navigation,
+    .navigation-auto {
+        position: relative;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .slider {
+        width: 100%;
+        height: auto;
+    }
+
+    .slides {
+        height: auto;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+/*Responsividade*/
