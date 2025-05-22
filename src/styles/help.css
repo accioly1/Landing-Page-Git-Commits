@@ -58,3 +58,16 @@
 svg{
     transition: transform 0.5s ease-in;
 }
+
+/*Animação Fade-In das respostas para dúvidas frequentes*/
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/*Animação Fade-In das respostas para dúvidas frequentes*/
