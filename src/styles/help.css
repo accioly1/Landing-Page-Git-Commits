@@ -71,3 +71,24 @@ svg{
     }
 }
 /*Animação Fade-In das respostas para dúvidas frequentes*/
+
+/*Responsividade*/
+@media (max-width: 600px) {
+    #help {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .pergunta h3 {
+        font-size: 1.3rem;
+    }
+
+    .resposta p {
+        font-size: 1.2rem;
+    }
+}
+/*Responsividade*/
