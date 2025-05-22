@@ -620,6 +620,44 @@
             2025 Todos os direitos reservados
         </div>
     </footer> <!--Rodapé-->
+
+    <!--Código do Modal-->
+    <script>
+        const produtos = document.querySelectorAll('.produto');
+        const modal = document.getElementById('product-modal');
+        const modalImage = document.querySelector('.modal-image');
+        const modalTitle = document.querySelector('.modal-title');
+        const modalDescription = document.querySelector('.modal-description');
+        const modalExtra = document.querySelector('.modal-extra');
+        const closeModal = document.querySelector('.close-modal');
+
+        produtos.forEach(produto => {
+            produto.addEventListener('click', () => {
+                const imgSrc = produto.querySelector('img').src;
+                const title = produto.querySelector('.produto-title').innerText;
+                const description = produto.querySelector('.produto-description').innerText;
+                const extraInfo = produto.querySelector('.produto-extra')?.innerHTML || '';
+
+                modalImage.src = imgSrc;
+                modalTitle.innerText = title;
+                modalDescription.innerText = description;
+                modalExtra.innerHTML = extraInfo;
+
+                modal.classList.remove('hidden');
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+            }
+        });
+    </script>
+    <!--Código do Modal-->
     
 </body>
 </html>
